@@ -1,0 +1,33 @@
+ 
+import java.util.Scanner;
+class Main {
+  public static void main(String[] args) {
+   Scanner grade=new Scanner(System.in);
+     System.out.println("what did you get as your grade please enter 0-100");
+    
+     int num = grade.nextInt();
+       grade.close();
+      if (num>=96 && num<=100){
+        System.out.println("a+");
+      }
+     else if (num>=90 && num<=95){
+       System.out.println("a");
+     }
+     else if (num>=85 && num<=89){
+      System.out.println("b+");
+     }
+    else if (num>=80 && num<=84){
+      System.out.println("b");
+     }
+    else if (num>=70 && num<=79){
+      System.out.println("c");
+     }
+    else if (num>=60 && num<=60){
+      System.out.println("d");
+    }
+    else{
+       System.out.println("f");
+    
+     }
+  }
+}
