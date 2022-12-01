@@ -1,48 +1,19 @@
-# Leap Year
-#### Respond to the following:
+class Main {
+  public static void main(String[] args) {
+    System.out.println("Is it a leap year?!?");
 
-1. Rewrite the following nested `if()` statements in a single line:
-  ```
-  if (year % 4 == 0) {
-      if (year % 100 != 0) {
-        // DO STUFF
-      } // end inner if statement
-   } // end outer if statement
-  ```
-  * **YOUR WRITING HERE**
+    System.out.println(isLeapYear(2000)); 
+    System.out.println(isLeapYear(2001)); 
+    System.out.println(isLeapYear(2020)); 
+    System.out.println(isLeapYear(2006)); 
+    System.out.println(isLeapYear(2022)); 
+  } 
 
-
-2. Label each as either correct or incorrect syntax. If incorrect, rewrite below:
-  * if (x == y) {
-
-    * **YOUR WRITING HERE**
-
-  * if [x == 10] {
-
-    * **YOUR WRITING HERE**
-
-  * if x = 10 then {
-
-    * **YOUR WRITING HERE**
-
-  * if (x equals 42) {
-
-    * **YOUR WRITING HERE**
-
-  * if (x => y) {
-
-    * **YOUR WRITING HERE**
-
-
-3. Fix the error in the code below:
-
-  ```
-  Scanner console = new Scanner(System.in);
-  System.out.print("What is your favorite color? ");
-  String name = console.next();
-  if (name == "blue") {
-      System.out.println("Mine, too!");
+  public static boolean isLeapYear(int year) {
+    if (year % 4 != 0 || (year % 100 == 0 &&  year % 400 != 0)) {
+      return false;
+    }
+    return true;
   }
-  ```
-
-  * **YOUR WRITING HERE**
+  
+} 
