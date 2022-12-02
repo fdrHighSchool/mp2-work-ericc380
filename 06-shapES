@@ -1,0 +1,56 @@
+  //class Main {
+  //*public static void main(String[] args) {
+  //for(int i=0;i<5;i++){
+   // System.out.println("*****");
+  //}
+  class Main {
+  public static void main(String[] args) {
+    System.out.println("Shapes!");
+    //square();
+    square(25);
+   // System.out.println();
+    //square(4);
+    //System.out.println(); 
+    rectangle(2,4);
+    rightTriangle(3);
+    int t=(10);
+    Triangle(t);
+  }
+  public static void square(int s) {
+    for (int row = 0; row < s; row++) {
+      for (int col = 0; col < s; col++) {
+        System.out.print("* ");
+      } // end col for loop
+      System.out.println();
+    } // end row for loop
+  } // end square method
+public static void rectangle(int l, int w) {
+    for (int row = 0; row < l; row++) {
+      for (int col = 0; col < w; col++) {
+        System.out.print("* ");
+      } // end col for loop
+      System.out.println();
+    } // end row for loop
+  } // end rectangle method
+public static void rightTriangle(int e) {
+
+    for (int row = 0; row < e; row++) {
+      for (int col = 0; col <= row ; col++) {
+        System.out.print("* ");
+      } // end col for loop
+      System.out.println();
+    } // end row for loop
+  } // end rightTriangle method
+public static void Triangle(int t) {
+    for (int row = 0; row < t; row++) {
+      for (int col = t-row ; row >1; col--) {
+        System.out.print("");
+        }//another bracket bc yes.
+        for (int col = 0; col <=row ; col++) {
+        System.out.print("* ");
+      } // end col for loop
+      
+      System.out.println();
+    } // end row for loop
+  } // end Triangle method
+}
