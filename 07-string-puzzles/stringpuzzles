@@ -1,0 +1,15 @@
+class Main {
+  public static void main(String[] args) {
+  String abc=("abc");
+  String subabc=abc.substring(0,2);
+    System.out.println(subabc+"cat");
+    
+    //1 spicy question 2
+    String d=("woohoo");
+    int j=d.length()/2;
+    //int n=(j/2);
+    String e= d.substring(0,j);
+    System.out.println(e);
+    
+  }
+}
