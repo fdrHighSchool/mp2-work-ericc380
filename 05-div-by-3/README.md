@@ -7,3 +7,4 @@ Think of the following method header:
 `public static boolean isPrime(int num)`
 
   * **YOUR WRITING HERE**
+booleans and mod and divide
