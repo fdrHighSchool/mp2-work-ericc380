@@ -22,3 +22,4 @@ for(int i = 0; i < s.length(); i++) {
 }
 ```
   * **YOUR WRITING HERE**
+i will just keep adding one to itself but will stop when it becomes bigger than s
